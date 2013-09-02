@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NullTress", "NullTress.vcxproj", "{C4538B9F-7BF6-44C6-AB33-6CFBA7AEAF3A}"
 EndProject
 Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "NullTressSetup", "..\NullTressSetup\NullTressSetup.isproj", "{80119B3F-3393-4683-BEF8-341638DEF5E3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C4538B9F-7BF6-44C6-AB33-6CFBA7AEAF3A} = {C4538B9F-7BF6-44C6-AB33-6CFBA7AEAF3A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

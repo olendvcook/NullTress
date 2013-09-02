@@ -58,6 +58,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="setup.exe" />
+    <None Include="Game.zip" />
   </ItemGroup>
 </Project>
