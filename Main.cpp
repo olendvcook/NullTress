@@ -2,8 +2,9 @@
 #include "Game.h"
 #include <SFML\Graphics.hpp>
 #include <SFML/System.hpp>
+#include <Windows.h>
 
-int main(int __argc, char** __argv)
+int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	IO mIO;
 
