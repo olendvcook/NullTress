@@ -59,5 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Game.zip" />
+    <None Include="README.md" />
   </ItemGroup>
 </Project>

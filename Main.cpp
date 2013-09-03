@@ -180,7 +180,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 				if (mBoard.IsGameOver())
 				{
-					mIO.Getkey();
 					WAIT_TIME = WAIT_TIME_DEFAULT;
 					WAIT_TIME_AMOUNT = WAIT_TIME_DEFAULT;
 					lastScore = 0;

@@ -13,7 +13,6 @@ IO::~IO(void)
 void IO::ClearScreen() 
 {
 	window.clear();
-	//boxColor (mScreen, 0, 0, mScreen->w - 1, mScreen->h - 1, mColors[BLACK]);
 }
 
 void IO::DrawRectangle (int pX1, int pY1, int pX2, int pY2, sf::Color color, bool isGhost)
@@ -45,7 +44,6 @@ int IO::GetScreenHeight()
 void IO::UpdateScreen()
 {
 	window.display();
-	//SDL_Flip(mScreen);
 }
 
 int IO::Pollkey()
@@ -62,54 +60,6 @@ int IO::Pollkey()
 		}
 	}
 	return -1;
-	/*
-	SDL_Event event;
-	while ( SDL_PollEvent(&event) ) 
-	{
-		switch (event.type) {
-			case SDL_KEYDOWN:
-				return event.key.keysym.sym;
-			case SDL_QUIT:
-				exit(3);
-		}
-	}
-	return -1;
-	*/
-
-}
-
-int IO::Getkey()
-{
-	/*
-	SDL_Event event;
-	while (true)
-	{
-	  SDL_WaitEvent(&event);
-	  if (event.type == SDL_KEYDOWN)
-		  break;
-      if (event.type == SDL_QUIT)
-		  exit(3);
-	};
-	return event.key.keysym.sym;
-	*/
-	return 0;
-}
-
-/* 
-======================================									
-Keyboard Input
-====================================== 
-*/
-int IO::IsKeyDown (int pKey)
-{
-	/*
-	Uint8* mKeytable;
-	int mNumkeys;
-	SDL_PumpEvents();
-	mKeytable = SDL_GetKeyState(&mNumkeys);
-	return mKeytable[pKey];
-	*/
-	return 0;
 }
 
 int IO::InitGraph()
@@ -126,7 +76,6 @@ void IO::DrawScore(int pScore)
 
 	sf::Text text("Number of Lines Cleared:", font);
 	sf::Text tScore;
-	//text.setString("Number of Lines Cleared:");
 	text.setPosition(20,50);
 	text.setColor(sf::Color::White);
 	text.setCharacterSize(10);

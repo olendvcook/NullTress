@@ -6,8 +6,6 @@
 #include <SFML\Graphics.hpp>
 
 #endif
-enum color {BLACK, RED, GREEN, BLUE, CYAN, MAGENTA, YELLOW, WHITE, COLOR_MAX};
-
 
 class IO
 {
@@ -26,8 +24,6 @@ public:
     int GetScreenHeight     ();
     int InitGraph           ();
     int Pollkey             ();
-    int Getkey              ();
-    int IsKeyDown           (int pKey);
     void UpdateScreen       ();
 	void DrawScore			(int pScore);
 };
