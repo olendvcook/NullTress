@@ -58,10 +58,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	tStored.setColor(sf::Color::White);
 	tStored.setCharacterSize(16);
 		
-
-
-	
-
 	int lastScore = 0;
 
 	while (1)
